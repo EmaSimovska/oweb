@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ema Simovska</title>
+	<link rel="stylesheet" type="text/css" href="ema.css">
+</head>
+<body>
+
+	<div class="navbar">
+	<a href="#home">Home</a>
+	<a href="#bio">Biography</a>
+	<a href="#galery">Galery</a>
+	<a href="#favs">Favourites</a> <!--ova ne e okej-->	
+	<a href="#forma">Survey</a>
+	</div>
+
+	<div id="home">
+	<img src="Sliki/home.png">
+	</div>
+
+	<div id="bio">
+		<br>
+		<p>Hi there! Welcome to my website! My name is Ema Simovska and I am 22 years old. I am currently a student at the Faculty of Electrical Engineering and Information Technology in Skopje. Other than my studies, my interests include graphical design, marketing, volunteering... And other hobbies of mine are hiking, traveling, reading books, watching movies and, of course, listening to music!</p>
+		<img src="Sliki/hiking.png">
+	</div>
+
+	<div id="galery">
+		<br>
+		<p>....As i said, i love traveling!!! Here are some of my memories....</p>	
+		<img src="Sliki/insta1.jpg">
+		<img src="Sliki/insta2.jpg">
+		<img src="Sliki/insta3.jpg">
+		<img src="Sliki/insta4.jpg">
+		<img src="Sliki/insta5.jpg">
+		<img src="Sliki/insta6.jpg">
+	</div>
+	<div id="favs">
+		<div id="knigi">
+			<br>
+			<p>I read mostly fantasy books, and here are some of my favourites</p>
+			<a href="https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix"><img src="Sliki/harrypotter.jpeg"></a>	
+			<a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings"><img src="Sliki/lotr.jpg"></a>
+			<a href="https://www.goodreads.com/book/show/68428.The_Final_Empire"><img src="Sliki/mistborn.jpg"></a>
+		</div>
+
+		<div id="film">
+			<br>
+			<div><p>These are some of my favourite movies</p></div>
+			<a href="https://www.imdb.com/title/tt1951264/"><img src="Sliki/hungergames.jpg"></a>	
+			<a href="https://www.imdb.com/title/tt2543164/"><img src="Sliki/arrival.jpg"></a>
+			<a href="https://www.imdb.com/title/tt1659337/"><img src="Sliki/wallflower.jpg"></a>
+		</div>
+
+
+		<div id="music">
+			<br>
+			<p>This music rocks!</p>
+			<a href="https://www.youtube.com/watch?v=c3J1oKQcp-c"><img src="Sliki/roop.png"></a>	
+			<a href="https://www.youtube.com/watch?v=xtQirM784oM"><img src="Sliki/coldplay.png"></a>
+			<a href="https://www.youtube.com/watch?v=O-YHU6BwPR0"><img src="Sliki/rem.png"></a>
+		</div>
+	</div>
+
+	<div id="forma">
+		<h1>Survey</h1>
+		<form>
+
+			<label for="first">First Name:</label>
+			<input id="first" type="text" placeholder="Ame" required name="first">
+			<label for="last">Last Name:</label>
+			<input id="last" type="text" placeholder="Aksvomis" required name="last">
+
+			<div>
+				<label for="male">Male</label>
+				<input id="male" name="gender" type="radio" value="male">
+				<label for="female">Female</label>
+				<input id="female" name="gender" type="radio" value="female">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input id="email" type="email" placeholder="your email" required name="email">
+			</div>
+			<div>
+				<label for="month">Birthday:</label>
+				<select id="month" name="month">
+					<option value="">Month</option>
+					<option value="january">January</option>
+					<option value="february">February</option>
+					<option value="march">March</option>
+				</select>
+				<label for="day">Day:</label>
+				<select id="day" name="day">
+					<option value="">Day</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+				</select>
+				<label for="year">Year:</label>
+				<select id="year" name="year">
+					<option value="">Year</option>
+					<option value="1993">1993</option>
+					<option value="1994">1994</option>
+					<option value="1995">1995</option>
+				</select>
+			</div>
+
+			<textarea id="" rows="10" cols="100" placeholder="Type your comments here"></textarea>
+
+			<button><a href="#forma">Submit</a></button>
+
+		</form>
+	</div>
+
+</body>
+</html>
+
+<!-- class="" se pristapuva so . 
+	 id=""	  se pristapuva so # 		
+-->

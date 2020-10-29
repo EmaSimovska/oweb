@@ -1,0 +1,104 @@
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+
+#home img{
+  width: 100%;
+}
+
+
+#bio{
+  background-color: #abd7c4;
+}
+
+#bio p{
+    font-weight: 650;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+}
+#bio img{
+  width: 100%;
+}
+
+
+#galery p{
+    font-weight: 650;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+}
+
+#galery img{
+  width: 30%;
+  float: left;
+  margin:1.66%;
+}
+
+
+#knigi p{
+  font-weight: 650;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 25px;
+}
+
+#knigi img{
+  width: 30%;
+  float: left;
+  margin:1.66%;
+}
+
+#film p{
+  font-weight: 650;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 25px;
+}
+
+#film img{
+  width: 30%;
+  float: left;
+  margin:1.66%;
+}
+
+#music p{
+  font-weight: 650;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 25px;
+}
+
+#music img{
+  width: 30%;
+  float: left;
+  margin:1.66%;
+}
+
+#forma{
+  text-align: center;
+  font-family: tahoma;
+  background-color: #abd7c4; 
+}
