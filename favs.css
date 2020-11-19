@@ -1,0 +1,104 @@
+
+body {
+  margin: 0 auto;
+  background-color: rgb(247, 231, 164); 
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+  .start-text {
+    font-weight: 650;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+  }
+  
+  /* #knigi img{
+    width: 30%;
+    float: left;
+    margin:1.66%;
+  } */
+  
+  /* #film p{
+    font-weight: 650;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+  } */
+  
+  /* #film img{
+    width: 30%;
+    float: left;
+    margin:1.66%;
+  } */
+  
+  /* #music p{
+    font-weight: 650;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+  } */
+  
+  /* #music img{
+    width: 30%;
+    float: left;
+    margin:1.66%;
+  } */
+
+  .post {
+    width: 31%;
+    float: left;
+    padding: 1%;
+  }
+
+  .slika {
+    width: 100%;
+    float: left;
+    margin:1.66%;
+  }
+
+  .title{
+    font-weight: 600;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .q{
+    font-weight: 550;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 16px;
+    color: #333;
+  }
+
+  form{
+    text-align: center;   
+    font-family: tahoma;
+    text-size-adjust: 17px; 
+    font-weight: 550;
+  }
