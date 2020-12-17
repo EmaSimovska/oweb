@@ -5,8 +5,103 @@
 	<title>Ema's Gallery</title>
     <link rel="stylesheet" type="text/css" href="gallery.css">
     <script src="gallery.js"></script>
-    <!-- <script src="gallery2.js"></script> -->
-    <!-- <script src="jquery/jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+
+            
+            
+            $(document).ready(function(){
+                // myStorage = window.localStorage;
+
+                // komentar1
+                var $cuvajkom1 = $("#novkomentar1");
+                if(localStorage.getItem("#novkomentar1")){
+                    $cuvajkom1.html(localStorage.getItem("#novkomentar1"));
+                }
+                $("#b1").click(function(){
+                    localStorage.setItem("#novkomentar1", $cuvajkom1.html());
+                });
+
+                // komentar2
+                var $cuvajkom2 = $("#novkomentar2");
+                if(localStorage.getItem("#novkomentar2")){
+                    $cuvajkom2.html(localStorage.getItem("#novkomentar2"));
+                }
+                $("#b2").click(function(){
+                    localStorage.setItem("#novkomentar2", $cuvajkom2.html());
+                });
+
+                // komentar3
+                var $cuvajkom3 = $("#novkomentar3");
+                if(localStorage.getItem("#novkomentar3")){
+                    $cuvajkom3.html(localStorage.getItem("#novkomentar3"));
+                }
+                $("#b3").click(function(){
+                    localStorage.setItem("#novkomentar3", $cuvajkom3.html());
+                });
+
+                // komentar4
+                var $cuvajkom4 = $("#novkomentar4");
+                if(localStorage.getItem("#novkomentar4")){
+                    $cuvajkom4.html(localStorage.getItem("#novkomentar4"));
+                }
+                $("#b4").click(function(){
+                    localStorage.setItem("#novkomentar4", $cuvajkom4.html());
+                });
+
+                // komentar5
+                var $cuvajkom5 = $("#novkomentar5");
+                if(localStorage.getItem("#novkomentar5")){
+                    $cuvajkom5.html(localStorage.getItem("#novkomentar5"));
+                }
+                $("#b5").click(function(){
+                    localStorage.setItem("#novkomentar5", $cuvajkom5.html());
+                });
+
+                // komentar6
+                var $cuvajkom6 = $("#novkomentar6");
+                if(localStorage.getItem("#novkomentar6")){
+                    $cuvajkom6.html(localStorage.getItem("#novkomentar6"));
+                }
+                $("#b6").click(function(){
+                    localStorage.setItem("#novkomentar6", $cuvajkom6.html());
+                });
+            });
+
+
+            $(document).on('dblclick', '.novkom', function(){
+                $(this).prev().remove();
+                $(this).remove();
+                var $cuvajkom1 = $("#novkomentar1");
+                localStorage.setItem("#novkomentar1", $cuvajkom1.html());
+
+                var $cuvajkom2 = $("#novkomentar2");
+                localStorage.setItem("#novkomentar2", $cuvajkom2.html());
+
+                var $cuvajkom3 = $("#novkomentar3");
+                localStorage.setItem("#novkomentar3", $cuvajkom3.html());
+
+                var $cuvajkom4 = $("#novkomentar4");
+                localStorage.setItem("#novkomentar4", $cuvajkom4.html());
+
+                var $cuvajkom5 = $("#novkomentar5");
+                localStorage.setItem("#novkomentar5", $cuvajkom5.html());
+
+                var $cuvajkom6 = $("#novkomentar6");
+                localStorage.setItem("#novkomentar6", $cuvajkom6.html());
+
+            });
+
+            $(document).on('mouseover', '.celKomentar', function(){
+                $(this).children().css("background-color", "white");
+            });
+
+            $(document).on('mouseleave', '.celKomentar', function(){
+                $(this).children().css("background-color", "");
+            });
+
+        </script>
+    
 </head>
 
 
@@ -38,7 +133,7 @@
                         <form id="form1">
                             <textarea id="textime1" placeholder="Name:"></textarea>
                             <textarea id="text1" placeholder="Type your comments here"></textarea>
-                            <br><button type="button" class="btn" id="b1">Comment</button>
+                            <br><button type="button" class="btn" id="b1" >Comment</button>
                         </form>  
                         
                     </td>

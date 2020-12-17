@@ -1,18 +1,19 @@
 
 body {
   margin: 0 auto;
-  background-color: rgb(247, 231, 164); 
+  background-color: rgb(248, 236, 187); 
+  font-family: tahoma;
 }
 
 .navbar {
+    z-index: 100;
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
   }
   
-  /* Links inside the navbar */
   .navbar a {
     float: left;
     display: block;
@@ -22,68 +23,41 @@ body {
     text-decoration: none;
   }
   
-  /* Change background on mouse-over */
   .navbar a:hover {
-    background: #ddd;
+    background:  rgb(248, 236, 187);
     color: black;
   }
-
 
   .start-text {
     font-weight: 650;
     text-align: center;
-    font-family: tahoma;
     font-size: 25px;
   }
   
-  /* #knigi img{
-    width: 30%;
-    float: left;
-    margin:1.66%;
-  } */
-  
-  /* #film p{
-    font-weight: 650;
-    text-align: center;
-    font-family: tahoma;
-    font-size: 25px;
-  } */
-  
-  /* #film img{
-    width: 30%;
-    float: left;
-    margin:1.66%;
-  } */
-  
-  /* #music p{
-    font-weight: 650;
-    text-align: center;
-    font-family: tahoma;
-    font-size: 25px;
-  } */
-  
-  /* #music img{
-    width: 30%;
-    float: left;
-    margin:1.66%;
-  } */
-
   .post {
+    position: relative;
+    width: 31%;
+    float: left;
+    padding: 1%;    
+  }
+
+  .music_stars{
     width: 31%;
     float: left;
     padding: 1%;
+    z-index: 99;
   }
 
   .slika {
     width: 100%;
     float: left;
     margin:1.66%;
+    z-index: 0;
   }
 
   .title{
     font-weight: 600;
     text-align: center;
-    font-family: tahoma;
     font-size: 18px;
     color: #333;
   }
@@ -91,14 +65,46 @@ body {
   .q{
     font-weight: 550;
     text-align: center;
-    font-family: tahoma;
     font-size: 16px;
     color: #333;
   }
 
   form{
     text-align: center;   
-    font-family: tahoma;
     text-size-adjust: 17px; 
     font-weight: 550;
+    z-index: 99;
   }
+
+
+.txt_overlay{
+  
+  position: absolute;
+  padding-top: 45%;
+  margin-left: 15%;
+  padding-right: 15%;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  width: 70%;
+  height: 80%;
+  text-align: center;
+  opacity: 0;
+  color: rgb(3, 3, 3);
+  text-shadow: 0px 0px 1px #333;
+}
+
+.post:hover .txt_overlay{
+  z-index: 2;
+  opacity: 100%;
+  transition: opacity 0.50s;
+}
+
+.post:hover img{
+  opacity: 25%;
+  transition: opacity 0.50s;
+}
+
+#end-text{
+  padding-top: 600px;
+}

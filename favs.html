@@ -4,6 +4,13 @@
 <head>
 	<title>Ema's Favourites</title>
 	<link rel="stylesheet" type="text/css" href="favs.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			alert("Get to know me through my favourites! Have fun exploring my taste in books, movies and music <3")
+		});
+	</script>
+
 </head>
 
 
@@ -22,29 +29,61 @@
 	<div id="knigi">
 		
 		<div class="post" id="1">
-			<a href="https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix"><img src="Sliki/harrypotter.jpg" class="slika"></a>
-			<p class="title">Harry Potter and the Order of the Phoenix</p>
-			<p class="q">How would you rate this book?</p>
-			<form>
-				<!-- <textarea id="text1" placeholder="Type your comments here"></textarea>
-				<button type="button" id="b1">Comment</button> -->
-				<select class="stars" name="stars1">
-					<option value="5 stars">5 stars</option>
-					<option value="4 stars">4 stars</option>
-					<option value="3 stars">3 stars</option>
-					<option value="2 stars">2 stars</option>
-					<option value="1 star">1 star</option>
-				</select>
-			</form>
+			
+			<img src="Sliki/harrypotter.jpg" class="slika">
+			<a href="https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix">
+				<div class="txt_overlay">
+					The threat of Lord Voldemort has returned to the wizarding world. 
+					While the Ministry of Magic attempts to deny the return of this evil 
+					to the wizarding world, and band of wizards gather together in secret 
+					in order to foil the plans of the dark lord. In this Thrilling adventure, 
+					we see rebellion against society and the cause and effect that our companions 
+					we have been growing up with for years have on the world as a whole.
+				</div>
+			</a>
+			
 		</div>
 
 		<div class="post" id="2">
-			<a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings"><img src="Sliki/lotr.jpg" class="slika"></a>
-			<p class="title">The Lord of the Rings 1</p>
+			<img src="Sliki/lotr.jpg" class="slika">
+			<a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings">
+				<div class="txt_overlay">
+					The future of civilization of Middle Earth rests in the 
+					fate of the One Ring, which has been lost for centuries. 
+					Powerful forces are unrelenting in their search for it. But 
+					fate has placed it in the hands of a young Hobbit named 
+					Frodo Baggins, who inherits the Ring and steps into legend. 
+					A daunting task lies ahead for Frodo when he becomes the 
+					Ringbearer - to destroy the One Ring in the fires of Mount 
+					Doom where it was forged.
+				</div>
+			</a>
+			
+		</div>
+
+		<div class="post" id="3">
+			<img src="Sliki/mistborn.jpg" class="slika">
+			<a href="https://www.goodreads.com/book/show/68428.The_Final_Empire">
+				<div class="txt_overlay">
+					The story follows Vin's life as she comes into her own as one 
+					of the Mistborn, people who can use ingested metal particles 
+					to enhance their abilities, both mental and physical. She begins 
+					on a journey to find out who she really is as she fights against 
+					the Final Empire and overthrowing the Lord Ruler. With her help, 
+					along with the "crew", Kelsier plans to lead a 
+					revolution and save the world at the same time.
+				</div>			
+			</a>
+			
+		</div>
+	</div>
+
+	<div id="music_stars_id">
+		
+		<div class="music_stars">
+			<p class="title">Harry Potter and the Order of the Phoenix</p>
 			<p class="q">How would you rate this book?</p>
 			<form>
-				<!-- <textarea id="text1" placeholder="Type your comments here"></textarea>
-				<button type="button" id="b1">Comment</button> -->
 				<select class="stars" name="stars1">
 					<option value="5 stars">5 stars</option>
 					<option value="4 stars">4 stars</option>
@@ -55,13 +94,10 @@
 			</form>
 		</div>
 
-		<div class="post" id="3">
-			<a href="https://www.goodreads.com/book/show/68428.The_Final_Empire"><img src="Sliki/mistborn.jpg" class="slika"></a>
-			<p class="title">Mistborn: The Final Empire</p>
+		<div class="music_stars">
+			<p class="title">The Lord of the Rings 1</p>
 			<p class="q">How would you rate this book?</p>
 			<form>
-				<!-- <textarea id="text1" placeholder="Type your comments here"></textarea>
-				<button type="button" id="b1">Comment</button> -->
 				<select class="stars" name="stars1">
 					<option value="5 stars">5 stars</option>
 					<option value="4 stars">4 stars</option>
@@ -71,6 +107,21 @@
 				</select>
 			</form>
 		</div>
+
+		<div class="music_stars">
+			<p class="title">Mistborn: The Final Empire</p>
+			<p class="q">How would you rate this book?</p>
+			<form>
+				<select class="stars" name="stars1">
+					<option value="5 stars">5 stars</option>
+					<option value="4 stars">4 stars</option>
+					<option value="3 stars">3 stars</option>
+					<option value="2 stars">2 stars</option>
+					<option value="1 star">1 star</option>
+				</select>
+			</form>
+		</div>
+
 	</div>
 
 	<p class = "start-text"><br>These are some of my favourite movies</p>
@@ -78,11 +129,64 @@
 	<div id="film">
 
 		<div class="post" id="4">
-			<a href="https://www.imdb.com/title/tt1951264/"><img src="Sliki/hungergames.jpg" class = "slika"></a>
+			<img src="Sliki/hungergames.jpg" class = "slika">
+			<a href="https://www.imdb.com/title/tt1951264/">				
+				<div class="txt_overlay">
+					After arriving safely home from their unprecedented victory 
+					in the 74th Annual Hunger Games, Katniss and Peeta discover that 
+					they must do a quick turnaround and begin a Victors Tour. As 
+					she and Peeta travel throughout the districts, Katniss senses 
+					a rebellion is stirring. However, President Snow 
+					proves that he is still very much in control when word comes of a 
+					cruel change in the rules for the upcoming 75th Hunger Games.
+				</div>
+			</a>
+			
+		</div>
+
+		<div class="post" id="5">
+			<img src="Sliki/arrival.jpg" class="slika">
+			<a href="https://www.imdb.com/title/tt2543164/">
+				<div class="txt_overlay">
+					Linguistics professor Louise Banks leads an elite 
+					team of investigators when gigantic spaceships touch 
+					down in 12 locations around the world. As nations 
+					teeter on the verge of global war, Banks and her crew 
+					must race against time to find a way to communicate 
+					with the extraterrestrial visitors. Hoping to unravel 
+					the mystery, she takes a chance that could threaten her 
+					life and quite possibly all of mankind.
+				</div>
+			</a>
+			
+		</div>
+
+		<div class="post" id="6">
+			<img src="Sliki/wallflower.jpg" class="slika">
+			<a href="https://www.imdb.com/title/tt1659337/">
+				<div class="txt_overlay">
+					Socially awkward teen Charlie is a wallflower, always 
+					watching life from the sidelines, until two free-spirited 
+					students become his mentors. Sam and her stepbrother 
+					Patrick help him discover the joys of friendship, first love, 
+					music and more, while a teacher sparks Charlie's dreams of 
+					becoming a writer. However, as his new friends prepare to leave 
+					for college, Charlie's inner sadness threatens to shatter his 
+					newfound confidence.
+				</div>
+			</a>
+			
+		</div>
+
+	</div>
+
+	<div id="music_stars_id">
+		
+		<div class="music_stars">
 			<p class="title">The Humger Games: Catching Fire</p>
 			<p class="q">How would you rate this movie?</p>
 			<form>
-					<select class="stars" name="stars1">
+				<select class="stars" name="stars1">
 					<option value="5 stars">5 stars</option>
 					<option value="4 stars">4 stars</option>
 					<option value="3 stars">3 stars</option>
@@ -92,8 +196,7 @@
 			</form>
 		</div>
 
-		<div class="post" id="5">
-			<a href="https://www.imdb.com/title/tt2543164/"><img src="Sliki/arrival.jpg" class="slika"></a>
+		<div class="music_stars">
 			<p class="title">Arrival</p>
 			<p class="q">How would you rate this movie?</p>
 			<form>
@@ -107,8 +210,7 @@
 			</form>
 		</div>
 
-		<div class="post" id="6">
-			<a href="https://www.imdb.com/title/tt1659337/"><img src="Sliki/wallflower.jpg" class="slika"></a>
+		<div class="music_stars">
 			<p class="title">The Perks of being a Wallflower</p>
 			<p class="q">How would you rate this movie?</p>
 			<form>
@@ -129,11 +231,49 @@
 	<div id="music">
 
 		<div class="post" id="7">
-			<a href="https://www.youtube.com/watch?v=c3J1oKQcp-c"><img src="Sliki/roop.png" class = "slika"></a>
+			<img src="Sliki/roop.png" class = "slika">
+			<a href="https://www.youtube.com/watch?v=c3J1oKQcp-c">
+				<div class="txt_overlay">
+					Click to listen
+				</div>
+			</a>
+			
+			
+		</div>
+
+		<div class="post" id="8">
+			<img src="Sliki/coldplay.png" class="slika">
+			<a href="https://www.youtube.com/watch?v=xtQirM784oM">
+				<div class="txt_overlay">
+					Click to listen
+				</div>
+			</a>
+			
+			
+		</div>
+
+		<div class="post" id="9">
+			<img src="Sliki/rem.png" class="slika">
+			<a href="https://www.youtube.com/watch?v=O-YHU6BwPR0">
+				<div class="txt_overlay">
+					Click to listen
+				</div>
+			</a>
+			
+			
+		</div>
+
+	</div>
+
+
+
+	<div id="music_stars_id">
+		
+		<div class="music_stars">
 			<p class="title">Roo Panes - Little Giant</p>
 			<p class="q">How would you rate this song?</p>
 			<form>
-					<select class="stars" name="stars1">
+				<select class="stars" name="stars1">
 					<option value="5 stars">5 stars</option>
 					<option value="4 stars">4 stars</option>
 					<option value="3 stars">3 stars</option>
@@ -143,8 +283,7 @@
 			</form>
 		</div>
 
-		<div class="post" id="8">
-			<a href="https://www.youtube.com/watch?v=xtQirM784oM"><img src="Sliki/coldplay.png" class="slika"></a>
+		<div class="music_stars">
 			<p class="title">Coldplay - Warning Sign</p>
 			<p class="q">How would you rate this song?</p>
 			<form>
@@ -158,8 +297,7 @@
 			</form>
 		</div>
 
-		<div class="post" id="9">
-			<a href="https://www.youtube.com/watch?v=O-YHU6BwPR0"><img src="Sliki/rem.png" class="slika"></a>
+		<div class="music_stars">
 			<p class="title">REM - Nightswimming</p>
 			<p class="q">How would you rate this song?</p>
 			<form>
@@ -175,7 +313,11 @@
 
 	</div>
 
-	<p class = "start-text">
+
+
+
+
+	<p class = "start-text" id="end-text">
 		<br><br>If you have an opinion on a book/movie/song,<br>
 		please feel free share it on my <a href="ema.html#blog">blog</a>
 	</p>

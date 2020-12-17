@@ -6,12 +6,12 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: tahoma;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
   display: block;
@@ -21,35 +21,10 @@ body {
   text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(223, 238, 195);
   color: black;
 }
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
 
 p{
     font-weight: 650;
@@ -57,8 +32,6 @@ p{
     font-family: tahoma;
     font-size: 25px;
 }
-
-
 
 .slika {
   width: 100%;
@@ -105,11 +78,14 @@ form{
 #novkomentar1 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar1 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar2 p{
@@ -126,11 +102,14 @@ form{
 #novkomentar2 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar2 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar3 p{
@@ -147,11 +126,14 @@ form{
 #novkomentar3 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar3 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
 
 
@@ -169,11 +151,14 @@ form{
 #novkomentar4 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar4 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
 
 
@@ -191,11 +176,14 @@ form{
 #novkomentar5 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar5 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
 
 
@@ -213,9 +201,13 @@ form{
 #novkomentar6 .novdate{
   border-top: solid 1px #333;
   padding-top: 10px;
+  margin: 0%;
 }
 
 #novkomentar6 .novkom{
   font-size: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0%;
 }
+

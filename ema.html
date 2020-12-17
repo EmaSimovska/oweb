@@ -3,6 +3,34 @@
 	<head>
 		<title>Ema Simovska</title>
 		<link rel="stylesheet" type="text/css" href="ema.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+
+				// search by keyword - gi filtrira samo contents bez naslovite
+  				$("#myInput").on("keyup", function() {
+    				var value = $(this).val().toLowerCase();
+    				$("#new-blog .blogpost").filter(function() {
+						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+						$(this).prev().toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    				});
+				});
+
+				// reakcija pri submit na formata
+				$("#submit").click(function(){
+					alert("Thank you "+ $("#first").val() +" "+ $("#last").val() +" for your opinion! I greatly apreciate it.");
+				});
+
+			});
+
+			// so dvoklik na title-element vo blogot, se prikriva/pokazuva sodrzinata
+			$(document).on('dblclick', '.blogtitle', function(){
+                $(this).next().fadeToggle();
+			});
+			
+
+		</script>
 		<script src="ema.js"></script>
 	</head>
 	<body>
@@ -35,10 +63,12 @@
 		
 
 		<div id="blog">
+
 			<p><br><br>Feel free to contribute to my blog with an awesome post!</p>
-			<!-- <div id="new-blog"> -->
+			<br><p><input id="myInput" type="text" placeholder="Filter by keywords"></p><br>			
+			
 				<table id="new-blog">
-					<tr class="blogtitle"><th>Don't be afraid to travel</th></tr>
+					<tr class="blogtitle"><td>Don't be afraid to travel</td></tr>
 					<tr class="blogpost"><td>Fear is a powerful deterrent. Taking the leap into the unknown is scary, 
 						but remember: you aren’t the first person to travel the world. You aren’t 
 						discovering new continents or exploring uncharted territories. There is a 
@@ -49,23 +79,19 @@
 						part. You’ll make mistakes. Everyone does. But that’s part of the experience. 
 						There will be lots of people out there to help you. You’ll be shocked at just 
 						how helpful and kind people are. You’ll make friends, you’ll survive, and 
-						you’ll be better for it.</td></tr>
-					
-					
+						you’ll be better for it.</td></tr>					
 				</table>
-			<!-- </div> -->
 				
-			
-
 			<div>
 				<form id="blogform">
 					<p><textarea id="NewTitle" rows="2" cols="100" placeholder="Title"></textarea><br>
 					<textarea id="NewPost" rows="3" cols="100" placeholder="Text"></textarea><br>
 					<button type="button" id="NewButton">POST</button></p>
+					<button type="button" id="SortButton">SORT</button></p>
 				</form>
 			</div>
 
-		</div>
+		</div> <!-- end of blog -->
 
 		<hr>
 
@@ -118,14 +144,10 @@
 				<button id="submit">Submit</button>
 
 			</form>
-		</div>
-		<div id="response">
-			<p><hr></p>
-		</div>
+		</div>	<!-- end of form -->
+
 
 	</body>
 </html>
 
-<!-- class="" se pristapuva so . 
-	 id=""	  se pristapuva so # 		
--->
+

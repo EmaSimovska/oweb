@@ -5,7 +5,7 @@
 
 function start(){
 
-
+// ***************************************************************
 
     var like_1 = document.getElementById("like1");
     like_1.addEventListener("click", change_heart1, false);
@@ -61,11 +61,13 @@ function AddComment1(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela1.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime1+" says:</p>"+
-                         "<p class=\"novkom\">"+kom1+"</p>";   
+    tabela1.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime1+" says:</p>"+
+                         "<p class=\"novkom\">"+kom1+"</p></div>";   
 
     document.getElementById("text1").value="";
     document.getElementById("textime1").value="";
+
+    
 }
 
 function AddComment2(){
@@ -78,8 +80,8 @@ function AddComment2(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela2.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime2+" says:</p>"+
-                         "<p class=\"novkom\">"+kom2+"</p>";  
+    tabela2.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime2+" says:</p>"+
+                         "<p class=\"novkom\">"+kom2+"</p></div>";  
                          
     document.getElementById("text2").value="";
     document.getElementById("textime2").value="";
@@ -95,8 +97,8 @@ function AddComment3(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela3.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime3+" says:</p>"+
-                         "<p class=\"novkom\">"+kom3+"</p>"; 
+    tabela3.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime3+" says:</p>"+
+                         "<p class=\"novkom\">"+kom3+"</p></div>"; 
     
     document.getElementById("text3").value="";
     document.getElementById("textime3").value=""; 
@@ -112,8 +114,8 @@ function AddComment4(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela4.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime4+" says:</p>"+
-                         "<p class=\"novkom\">"+kom4+"</p>";   
+    tabela4.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime4+" says:</p>"+
+                         "<p class=\"novkom\">"+kom4+"</p></div>";   
     
     document.getElementById("text4").value="";
     document.getElementById("textime4").value="";
@@ -129,8 +131,8 @@ function AddComment5(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela5.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime5+" says:</p>"+
-                         "<p class=\"novkom\">"+kom5+"</p>";   
+    tabela5.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime5+" says:</p>"+
+                         "<p class=\"novkom\">"+kom5+"</p></div>";   
     
     document.getElementById("text5").value="";
     document.getElementById("textime5").value="";
@@ -146,8 +148,8 @@ function AddComment6(){
     var mm = today.getMonth()+1;
     var yy = today.getFullYear();
 
-    tabela6.innerHTML += "<p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime6+" says:</p>"+
-                         "<p class=\"novkom\">"+kom6+"</p>";   
+    tabela6.innerHTML += "<div class='celKomentar'><p class=\"novdate\">("+dd+"."+mm+"."+yy+")<br>"+ime6+" says:</p>"+
+                         "<p class=\"novkom\">"+kom6+"</p></div>";   
     
     document.getElementById("text6").value="";
     document.getElementById("textime6").value="";
@@ -159,39 +161,77 @@ function AddComment6(){
     
 
 function change_heart1(){
-    like_1.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_1.bln = !like_1.bln;
+
+    if(like_1.bln){
+        like_1.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_1.setAttribute("src", "Sliki/heart-grey.png");
+    }  
 }
 
 function change_heart2(){
-    like_2.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_2.bln = !like_2.bln;
+
+    if(like_2.bln){
+        like_2.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_2.setAttribute("src", "Sliki/heart-grey.png");
+    }  
 }
 
 function change_heart3(){
-    like_3.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_3.bln = !like_3.bln;
+
+    if(like_3.bln){
+        like_3.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_3.setAttribute("src", "Sliki/heart-grey.png");
+    }    
 }
 
 function change_heart4(){
-    like_4.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_4.bln = !like_4.bln;
+
+    if(like_4.bln){
+        like_4.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_4.setAttribute("src", "Sliki/heart-grey.png");
+    }  
 }
 
 function change_heart5(){
-    like_5.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_5.bln = !like_5.bln;
+
+    if(like_5.bln){
+        like_5.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_5.setAttribute("src", "Sliki/heart-grey.png");
+    }  
 }
 
 function change_heart6(){
-    like_6.setAttribute("src", "Sliki/heart-red.png");
-    window.alert("Glad you like it!");
+    like_6.bln = !like_6.bln;
+
+    if(like_6.bln){
+        like_6.setAttribute("src", "Sliki/heart-red.png");
+        window.alert("Glad you like it!");
+    }
+    else{
+        like_6.setAttribute("src", "Sliki/heart-grey.png");
+    }  
 }
 
 }
-
-
-
-
 
 window.addEventListener("load", start, false);
